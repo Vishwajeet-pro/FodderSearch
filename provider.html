@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Provider</title>
+    <link rel="stylesheet" href="provider.css" />
+  </head>
+  <script>
+    function notify() {
+      if(document.querySelector(".notify").style.display === "flex")
+        document.querySelector(".notify").style.display = "none";
+      else
+      document.querySelector(".notify").style.display = "flex";
+    }
+  </script>
+  <body>
+    <div class="main">
+      <nav>
+        <div class="left">
+          <img src="/assets/logo.png" alt="logo" />
+          <h2 style="cursor: pointer">FodderSearch</h2>
+        </div>
+
+        <div class="right">
+          <h3>
+            <a href="about.html" style="text-decoration: none; color: black">
+              About Us
+            </a>
+          </h3>
+          <h3>
+            <a href="Contact.html" style="text-decoration: none; color: black">
+              Contact Us
+            </a>
+          </h3>
+          <h3>
+            <a href="signup.html" style="text-decoration: none; color: black"
+              >Log Out</a>
+          </h3>
+          <img src="assets/reminder.png" alt="" onclick="notify()" />
+          <div class="notify">
+            <p>No response yet</p>
+          </div>
+        </div>
+      </nav>
+
+      <div class="content1">
+        <p>List Your</p>
+        Catelogue
+      </div>
+
+      <div class="content2">
+        <div class="cardcontainer">
+          <div class="card">
+            <h3>Napier</h3>
+            <img src="assets/napier.jpg" alt="img" />
+            <h5>QTY: 8</h5>
+          </div>
+
+          <div class="card">
+            <h3>Fruit Peel</h3>
+            <img src="assets/fruit peels.jpg" alt="img" />
+            <h5>QTY: 8</h5>
+          </div>
+
+          <div class="card">
+            <h3>Hay</h3>
+            <img src="assets/hay.jpg" alt="img" />
+            <h5>QTY: 8</h5>
+          </div>
+
+          <div class="card">
+            <h3>Fruit Peel</h3>
+            <img src="assets/fruit peels.jpg" alt="img" />
+            <h5>QTY: 8</h5>
+          </div>
+
+          <div class="card">
+            <h3>Hay</h3>
+            <img src="assets/hay.jpg" alt="img" />
+            <h5>QTY: 8</h5>
+          </div>
+
+          <div class="card">
+            <h3>Napier</h3>
+            <img src="assets/napier.jpg" alt="img" />
+            <h5>QTY: 8</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="content3">
+        <h1>Exchange Options</h1>
+        <div class="priorities">
+          <select name="" id="">
+            <option value="null" selected disabled>First Priority</option>
+            <option value="">Milk</option>
+            <option value="">Ghee</option>
+            <option value="">Egg</option>
+            <option value="">Wool</option>
+          </select>
+          <select name="" id="">
+            <option value="null" selected disabled>Second Priority</option>
+            <option value="">Milk</option>
+            <option value="">Ghee</option>
+            <option value="">Egg</option>
+            <option value="">Wool</option>
+          </select>
+          <select name="" id="">
+            <option value="null" selected disabled>Third Priority</option>
+            <option value="">Milk</option>
+            <option value="">Ghee</option>
+            <option value="">Egg</option>
+            <option value="">Wool</option>
+          </select>
+          <select name="" id="">
+            <option value="null" selected disabled>Fourth Priority</option>
+            <option value="">Milk</option>
+            <option value="">Ghee</option>
+            <option value="">Egg</option>
+            <option value="">Wool</option>
+          </select>
+
+        </div>
+         <div class="updatebtn">Set Priorities</div>
+      </div>
+      <footer>
+        <h1>Subscribe to us</h1>
+        <div class="inpbtn">
+          <input
+            type="email"
+            name=""
+            id=""
+            placeholder="Enter your email here"
+          />
+          <button type="submit">Send</button>
+        </div>
+        <a href="privacypolicy.html">Privacy Policy</a>
+        <a href="terms.html">Terms and Conditions</a>
+        <h4>@copyright FS All Rights Reserved 2024</h4>
+      </footer>
+    </div>
+  </body>
+</html>

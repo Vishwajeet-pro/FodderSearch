@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+/*--------------------- defining keyframes creating animations--------------------- */
+
+@keyframes HerotextAnim {
+    100%{
+        color: #55A439;
+    }
+    0%{
+        
+        color: white;
+    }
+}
+
+@keyframes opac {
+    0%{opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes widthAnim {
+    0%{width: 0%;}
+    100%{width: 60%;}
+}
+
+
+/* ------------------------navigation css-------------------------------------------------- */
+nav{
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    border-bottom: 2px solid #55A439;
+}
+
+nav .left{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20vw;
+}
+
+nav .left img{
+    height: 6vh;
+}
+
+nav .right{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 45vw;
+}
+
+nav h3:hover{
+    background-color: #56a4394f;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width:768px){
+    
+    .main{
+        height: 100vh;
+        width: 100vw;
+    }
+     
+    nav{
+        width: 100%;
+        height: 10vh;
+    }
+
+    
+}
+
+@media only screen and (min-width:320px){
+    .main{
+        height: 100vh;
+        width: 100vw;
+    }
+     
+    nav{
+        width: 100%;
+        height: 10vh;
+    }
+    
+
+}
+
+
+/* ---------------------------------------------main content css----------------------- */
+
+.content{
+    height: 92vh;
+    width: 100vw;
+
+}
+
+/* -------------------------block 1 starts here -------------------------- */
+
+.content .block1{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .block1 .Herotxt{
+    color: #55A439;
+    font-weight: 900;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 8rem;
+    margin-top: 8vh;
+    animation-name: HerotextAnim;
+    animation-duration: 3s;
+    
+    
+}
+.content .block1 .line{
+    height: 2vh;
+    background-color: #55A439;
+    width: 60%;
+    margin-bottom: 3vh;
+    animation: widthAnim 2s;
+}
+
+.content .block1 p{
+    color: rgba(0, 0, 0, 0.521);
+    /* opacity: 60%; */
+    width: 70vw;
+    text-align: center;
+    animation-name: opac;
+    /* animation-delay: 3s; */
+    animation-duration: 3s;
+
+}
+
+/* --------------------------------block 2 goes here ------------------------------ */
+
+.content .block2{
+    height: 90vh;
+    width: 100vw;
+    background-color: #55A439;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.content .block2 .bigtext{
+    font-size: 6rem;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.content .block2 .whitebox{
+    height: 5vh;
+    width: 50%;
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+/*-------------------------- block 3 starts here ------------------------ */
+
+.content .block3{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .block3 .text{
+    color: #55A439;
+    font-size: 4rem;
+    margin: 10px;
+    padding: 10px;
+
+}
+.content .block3 .cardcontainer{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .block3 .cardcontainer .card{
+    border: solid 2px #55A439;
+    margin: 10px;
+    width: 10vw;
+    border-radius: 10px;
+    height: 22vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.content .block3 .cardcontainer .card img{
+    height: 10vh;
+    width: 10vh;
+    border: solid 2px #55A439;
+}
+
+
+
+
+
+/* ------------------------------block 4 css goes now ------------------------ */
+
+
+.content .block4{
+    height: 100vh;
+    width: 100vw;
+    background-color: #55A439;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.content .block4 h1{
+    font-size: 5rem;
+    color: white;
+}
+
+.content .block4 .horizontalcard{
+    background-color: white;
+    border-radius: 12px;
+    width: 70vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content .block4 .horizontalcard img{
+    width: 12vh;
+    height: 12vh;
+}
+
+/*----------------------- footer starts here -------------------- */
+
+
+footer{
+    /* border-top: 2px solid black; */
+    width: 100vw;
+    height: 50vh;
+    background-image: url(/assets/footer-background.jpg);
+    background-size: 110%;
+    background-position: center;
+}
+
+footer h1{
+    color: #55A439;
+    margin: 10px;
+    padding: 10px;
+
+}
+footer .inpbtn{
+    margin: 0px 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 22vw;
+}
+footer .inpbtn input{
+    border: none;
+    width: 75%;
+    height: 100%;
+}
+footer .inpbtn button{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: gray;
+}
+footer a{
+    color: #55A439;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+
+footer h4{
+    color: #55A439;
+    margin: 10px;
+    padding: 10px;
+}

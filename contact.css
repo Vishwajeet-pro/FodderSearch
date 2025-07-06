@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+/* ------------------------navigation css-------------------------------------------------- */
+
+
+
+nav{
+
+
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    border-bottom: 2px solid #55A439;
+}
+
+nav .left{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20vw;
+}
+
+nav .left img{
+    height: 6vh;
+}
+
+nav .right{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 45vw;
+}
+
+nav h3:hover{
+    background-color: #56a4394f;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* --------------------content goes here ----------------------------- */
+
+
+
+
+.content{
+    height: 92vh;
+    width: 100vw;
+    padding-left: 8vh;
+    padding-top: 5vh;
+    background-image: url(assets/contact\ us\ background.jpeg);
+
+}
+
+h1{
+    color: #55A439;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+}
+
+p{
+    width: 60vw;
+    margin: 15px 0px;
+}
+form{
+    display: flex;
+    height: 50vh;
+    width: 60vw;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #9e9da17e;
+    border-radius: 20px;
+}
+
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    margin: 2px 20px; 
+    font-weight: 500;
+    color: black;
+}
+
+
+input{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+textarea{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 40vw;
+    max-height: 20vh;
+    min-height: 6vh;
+    min-width: 16vw;
+    
+}
+
+
+/*----------------------- footer starts here -------------------- */
+
+
+
+
+
+footer{
+    /* border-top: 2px solid black; */
+    width: 100vw;
+    height: 50vh;
+    background-image: url(/assets/footer-background.jpg);
+    background-size: 110%;
+    background-position: center;
+}
+
+footer h1{
+    color: #55A439;
+    margin: 10px;
+    padding: 10px;
+
+}
+footer .inpbtn{
+    margin: 0px 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 22vw;
+}
+footer .inpbtn input{
+    border: none;
+    width: 75%;
+    height: 100%;
+}
+footer .inpbtn button{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: gray;
+}
+footer a{
+    color: #55A439;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+
+footer h4{
+    color: #55A439;
+    margin: 10px;
+    padding: 10px;
+}
